@@ -1,5 +1,5 @@
 import { Header } from "../../components/Header";
-import { About } from "../../components/sections/about";
+import { About } from "../../components/sections/About";
 
 export function Home() {
   return (
