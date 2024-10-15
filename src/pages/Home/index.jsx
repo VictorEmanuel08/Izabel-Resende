@@ -1,5 +1,6 @@
 import { Header } from "../../components/Header";
 import { About } from "../../components/sections/About";
+import { Services } from "../../components/sections/Services";
 
 export function Home() {
   return (
@@ -11,9 +12,8 @@ export function Home() {
         </div>
         <div
           id="servicos"
-          className="flex items-center justify-center h-screen bg-gray-100"
         >
-          <p className="font-bold">Serviços</p>
+          <Services />
         </div>
         <div
           id="projetos"
