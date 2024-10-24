@@ -10,9 +10,7 @@ export function Home() {
         <div id="sobre">
           <About />
         </div>
-        <div
-          id="servicos"
-        >
+        <div id="servicos">
           <Services />
         </div>
         <div
