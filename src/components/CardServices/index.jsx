@@ -12,9 +12,9 @@ export function CardServices({ titulo, desc }) {
   return (
     <div
       onClick={toggleExpand} // O clique agora é no card
-      className={`relative bg-gray-400 text-white rounded-lg flex flex-col items-center justify-center 
-      transition-all duration-700 ease-in-out hover:bg-gray-500 cursor-pointer
-      w-full h-36 sm:h-40`} // Definindo tamanhos fixos
+      className="relative bg-gray-800 text-white rounded-lg flex flex-col items-center justify-center 
+      transition-all duration-700 ease-in-out hover:bg-gray-700 hover:scale-105 cursor-pointer
+      w-full h-36 sm:h-40 select-none" // Definindo tamanhos fixos
     >
       {/* Ícone que alterna entre seta para baixo e para cima */}
       <MdOutlineKeyboardArrowDown
@@ -24,10 +24,10 @@ export function CardServices({ titulo, desc }) {
       />
 
       {/* Container que sobrepõe o título e a descrição */}
-      <div className="relative text-justify text-lg sm:text-xl lg:text-2xl w-full h-full flex items-center justify-center">
+      <div className="relative text-justify w-full h-full flex items-center justify-center">
         {/* Título com animação para entrar e sair de cena */}
         <p
-          className={`absolute transition-all duration-700 ease-in-out ${
+          className={`text-center text-base sm:text-lg lg:text-xl px-2 sm:px-14 absolute transition-all duration-700 ease-in-out ${
             isExpanded
               ? "translate-y-full opacity-0" // Título some
               : "translate-y-0 opacity-100" // Título visível

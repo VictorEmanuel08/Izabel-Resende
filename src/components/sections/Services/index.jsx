@@ -2,7 +2,7 @@ import { CardServices } from "../../CardServices";
 
 export function Services() {
   return (
-    <div className="w-full min-h-screen flex flex-col items-center justify-start bg-gray-100 px-4 md:px-16 py-8 space-y-6">
+    <div className="w-full min-h-screen flex flex-col items-center justify-center bg-gray-100 px-4 md:px-16 py-8 space-y-6 ">
       <h1 className="text-3xl font-bold mt-12 text-black">Serviços</h1>
       <div className="border-t border-black w-full"></div>
 
@@ -30,7 +30,7 @@ export function Services() {
         <CardServices
           titulo={"Projeto Arquitetônico"}
           desc={
-            "Um conjunto de documentos, desenhos e especificações que descrevem a concepção e a organização de um edifício ou espaço arquitetônico"
+            "Um conjunto de especificações que descrevem a concepção e a organização de um espaço arquitetônico"
           }
         />
         <CardServices
@@ -42,13 +42,13 @@ export function Services() {
         <CardServices
           titulo={"Projeto Legal"}
           desc={
-            "Composto por desenhos técnicos como, por exemplo, cortes, plantas e elevações, sendo desenvolvido com base nos modelos, especificações e normas locais pré-estabelecidas."
+            "Desenhos técnicos (cortes e plantas) sendo desenvolvidos com base nos modelos pré-estabelecidos."
           }
         />
         <CardServices
           titulo={"Projeto de Interiores Comercial"}
           desc={
-            "Intervenção nos ambientes internos e externos, definindo o uso do espaço conforme o mobiliário e equipamentos."
+            "Intervenção nos ambientes internos e externos, definindo o uso do espaço conforme o mobiliário."
           }
         />
         <CardServices

@@ -25,33 +25,40 @@ export function Header() {
         {/* Ícone do menu hambúrguer visível em telas menores */}
         <div className="md:hidden">
           <button onClick={toggleMenu}>
-            {isOpen ? (
-              <FiX className="text-3xl transition-transform duration-300" /> // Ícone de fechar
-            ) : (
-              <FiMenu className="text-3xl transition-transform duration-300" /> // Ícone de menu
-            )}
+            {/* Transição de transformação do ícone */}
+            <div
+              className={`relative transition-transform duration-500 ${
+                isOpen ? "transform rotate-90" : ""
+              }`}
+            >
+              {isOpen ? (
+                <FiX className="text-3xl transition-all duration-500" />
+              ) : (
+                <FiMenu className="text-3xl transition-all duration-500" />
+              )}
+            </div>
           </button>
         </div>
 
         {/* Menu em telas maiores */}
         <div className="hidden md:flex space-x-8">
           <Link to="sobre" smooth={true} duration={900}>
-            <button className="transition-all duration-300 hover:text-gray-500 hover:underline">
+            <button className="transition-all duration-500 hover:text-gray-800 hover:underline hover:scale-105">
               Sobre
             </button>
           </Link>
           <Link to="servicos" smooth={true} duration={900}>
-            <button className="transition-all duration-300 hover:text-gray-500 hover:underline">
+            <button className="transition-all duration-500 hover:text-gray-800 hover:underline hover:scale-105">
               Serviços
             </button>
           </Link>
           <Link to="projetos" smooth={true} duration={900}>
-            <button className="transition-all duration-300 hover:text-gray-500 hover:underline">
+            <button className="transition-all duration-500 hover:text-gray-800 hover:underline hover:scale-105">
               Projetos
             </button>
           </Link>
           <Link to="contato" smooth={true} duration={900}>
-            <button className="transition-all duration-300 hover:text-gray-500 hover:underline">
+            <button className="transition-all duration-500 hover:text-gray-800 hover:underline hover:scale-105">
               Contato
             </button>
           </Link>
