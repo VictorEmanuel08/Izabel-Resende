@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 
-export function CardServices({ titulo, desc }) {
+export function Services({ titulo, desc }) {
   const [isExpanded, setIsExpanded] = useState(false); // Controla o estado expandido/colapsado
 
   // Função para alternar o estado
