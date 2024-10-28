@@ -4,6 +4,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/autoplay";
 import "./customSwiper.css"; // Import your custom CSS file
+import { IoMdClose } from "react-icons/io";
 
 export function FullScreenCarousel({ projeto, onClose }) {
   return (
@@ -12,8 +13,11 @@ export function FullScreenCarousel({ projeto, onClose }) {
         <h2 className="text-xl font-bold text-white mx-auto text-center">
           {projeto.name}
         </h2>
-        <button onClick={onClose} className="text-2xl text-white">
-          X
+        <button
+          onClick={onClose}
+          className="text-2xl text-white transition-all duration-500 ease-in-out hover:scale-125"
+        >
+          <IoMdClose />
         </button>
       </div>
 
@@ -21,21 +25,10 @@ export function FullScreenCarousel({ projeto, onClose }) {
         <Swiper
           modules={[Navigation, Autoplay]}
           spaceBetween={10}
-          slidesPerView={1}
-          breakpoints={{
-            640: {
-              slidesPerView: 1,
-            },
-            768: {
-              slidesPerView: 2,
-            },
-            1024: {
-              slidesPerView: 3,
-            },
-          }}
+          slidesPerView={1.75}
           centeredSlides={true}
           loop={true}
-          autoplay={{ delay: 3000, disableOnInteraction: false }}
+          // autoplay={{ delay: 4000, disableOnInteraction: false }}
           navigation={{
             nextEl: ".custom-swiper-button-next",
             prevEl: ".custom-swiper-button-prev",
@@ -50,7 +43,7 @@ export function FullScreenCarousel({ projeto, onClose }) {
               <img
                 src={photo}
                 alt={`Imagem ${index + 1} do ${projeto.name}`}
-                className="w-full h-full object-contain"
+                className="w-full h-full object-contain rounded-2xl"
               />
             </SwiperSlide>
           ))}
