@@ -3,7 +3,7 @@ import { CardServices } from "../../CardServices";
 export function Services() {
   return (
     <div className="w-full min-h-screen flex flex-col items-center justify-center bg-gray-100 px-4 md:px-16 py-8 space-y-6 ">
-      <h1 className="text-3xl font-bold mt-12 text-black">Serviços</h1>
+      <h1 className="text-3xl font-bold text-black">Serviços</h1>
       <div className="border-t border-black w-full"></div>
 
       {/* Layout responsivo da grid */}

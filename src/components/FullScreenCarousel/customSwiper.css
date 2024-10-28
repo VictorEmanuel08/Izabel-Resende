@@ -1,0 +1,30 @@
+.custom-swiper-button-next,
+.custom-swiper-button-prev {
+  position: absolute;
+  top: 50%;
+  width: 40px;
+  height: 40px;
+  margin-top: -20px;
+  z-index: 10;
+  cursor: pointer;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: opacity 0.3s ease; /* Adiciona transição suave */
+}
+
+.custom-swiper-button-next {
+  right: 10px;
+  background-image: url('data:image/svg+xml;utf8,<svg fill="white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M8.293 6.293a1 1 0 011.414 0L15 11.586l-5.293 5.293a1 1 0 01-1.414-1.414L12.172 12l-3.879-3.879a1 1 0 010-1.414z"/></svg>');
+}
+
+.custom-swiper-button-prev {
+  left: 10px;
+  background-image: url('data:image/svg+xml;utf8,<svg fill="white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M15.707 6.293a1 1 0 010 1.414L11.414 12l4.293 4.293a1 1 0 01-1.414 1.414L9 12.414l5.293-5.293a1 1 0 011.414 0z"/></svg>');
+}
+
+/* Adiciona o efeito de hover */
+.custom-swiper-button-next:hover,
+.custom-swiper-button-prev:hover {
+  opacity: 0.5;
+}
