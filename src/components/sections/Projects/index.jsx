@@ -18,7 +18,7 @@ export function Projects() {
   const [selectedProject, setSelectedProject] = useState(null);
 
   return (
-    <div className="w-full min-h-screen flex flex-col items-center justify-center bg-gray-200 px-4 md:px-16 py-8">
+    <div className="w-full min-h-screen flex flex-col items-center justify-center bg-granito-pitaia px-4 md:px-16 py-8">
       <h1 className="text-3xl font-bold text-black">Projetos</h1>
       <div className="mt-6 border-t border-black w-full"></div>
       <div className="mt-6 grid grid-cols-2 md:grid-cols-3 gap-8 w-full">

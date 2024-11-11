@@ -1,5 +1,6 @@
 import { Header } from "../../components/Header";
 import { About } from "../../components/sections/About";
+import { Contact } from "../../components/sections/Contact";
 import { Projects } from "../../components/sections/Projects";
 import { Services } from "../../components/sections/Services";
 
@@ -17,11 +18,8 @@ export function Home() {
         <div id="projetos">
           <Projects />
         </div>
-        <div
-          id="contato"
-          className="flex items-center justify-center h-screen bg-gray-300"
-        >
-          <p className="font-bold">Contato</p>
+        <div id="contato">
+          <Contact />
         </div>
       </div>
     </div>
