@@ -5,6 +5,7 @@ import {
   FaWhatsapp,
 } from "react-icons/fa";
 import Perfil from "../../../assets/FOTO_BEL_PERFIL.jpg";
+import { ContactForm } from "../../ContactForm";
 
 export function Contact() {
   return (
@@ -57,38 +58,7 @@ export function Contact() {
           </div>
         </div>
 
-        <form className="w-full max-w-lg bg-white shadow-md rounded-lg p-4 space-y-2">
-          <div>
-            <label className="block text-gray-700">Nome</label>
-            <input
-              type="text"
-              className="w-full border border-gray-300 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
-              placeholder="Digite seu nome"
-            />
-          </div>
-          <div>
-            <label className="block text-gray-700">Email</label>
-            <input
-              type="email"
-              className="w-full border border-gray-300 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
-              placeholder="Digite seu email"
-            />
-          </div>
-          <div>
-            <label className="block text-gray-700">Mensagem</label>
-            <textarea
-              rows="4"
-              className="w-full border border-gray-300 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
-              placeholder="Digite sua mensagem"
-            ></textarea>
-          </div>
-          <button
-            type="submit"
-            className="w-full bg-blue-500 text-white font-bold py-2 rounded-lg hover:bg-blue-600 transition duration-300"
-          >
-            Enviar Mensagem
-          </button>
-        </form>
+        <ContactForm />
       </div>
       {/* Descrição */}
       <p className="text-center text-gray-700 max-w-lg mb-8">
