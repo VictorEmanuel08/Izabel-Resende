@@ -8,7 +8,7 @@ import "./customSwiper.css";
 import { IoMdClose } from "react-icons/io";
 import { ImageFullScreen } from "../ImageFullScreen";
 
-export function FullScreenCarousel({ projeto, onClose }) {
+export function FullScreenCarousel({ project, onClose }) {
   // Cria refs para o Swiper, título e descrição
   const swiperRef = useRef(null);
   const nameRef = useRef(null);
@@ -42,7 +42,7 @@ export function FullScreenCarousel({ projeto, onClose }) {
             ref={nameRef}
             className="text-xl font-bold text-white mx-auto text-center"
           >
-            {projeto.name}
+            {project.title}
           </h2>
           <button
             onClick={onClose}
@@ -82,14 +82,14 @@ export function FullScreenCarousel({ projeto, onClose }) {
               },
             }}
           >
-            {projeto.photos.map((photo, index) => (
+            {project.files.map((photo, index) => (
               <SwiperSlide
                 key={index}
                 className="flex items-center justify-center"
               >
                 <img
                   src={photo}
-                  alt={`Imagem ${index + 1} do ${projeto.name}`}
+                  alt={`Imagem ${index + 1} do ${project.title}`}
                   className="w-full h-full object-cover rounded-2xl cursor-pointer"
                   onClick={() => setFullScreenImage(photo)}
                 />
@@ -106,7 +106,7 @@ export function FullScreenCarousel({ projeto, onClose }) {
           ref={descRef}
           className="text-xl font-bold text-white mx-auto text-center"
         >
-          {projeto.desc}
+          {project.desc}
         </h2>
       </div>
       {/* Componente para abrir a imagem em tela cheia */}
