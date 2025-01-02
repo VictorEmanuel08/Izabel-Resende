@@ -9,7 +9,7 @@ export function About() {
 
   // Busca de projetos do Firestore
   useEffect(() => {
-    const fetchinfoSite = async () => {
+    const fetchInfoSite = async () => {
       try {
         const querySnapshot = await getDocs(collection(db, "infoSite"));
         const infoSiteList = querySnapshot.docs.map((doc) => ({
@@ -24,7 +24,7 @@ export function About() {
       }
     };
 
-    fetchinfoSite(); // Chama a função ao montar o componente
+    fetchInfoSite(); // Chama a função ao montar o componente
   }, []);
 
   if (isLoading) {
